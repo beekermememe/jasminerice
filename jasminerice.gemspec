@@ -3,8 +3,8 @@
 Gem::Specification.new do |s|
   s.name        = "jasminerice"
   s.version     = "0.1.0"
-  s.authors     = ["Brad Phelan"]
-  s.summary     = "Pain free coffeescript unit testing for Rails 3.1 using jasmine"
+  s.authors     = ["Brad Phelan","Brendan Keogh"]
+  s.summary     = "Pain free coffeescript unit testing for Rails 3.1 using jasmine 2.1"
   s.description = "Full support for the Rails 3.1 asset pipeline when bdd'ing your coffeescript or javascript using jasmine"
 
   s.platform    = Gem::Platform::RUBY
