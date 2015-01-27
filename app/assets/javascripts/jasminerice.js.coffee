@@ -1,7 +1,7 @@
 #=require jasmine
 #=require jasmine-html
-#=require jasmine-jquery-1.5.8
 #=require boot
+#=require jasmine-jquery-1.5.8
 
 (->
 
