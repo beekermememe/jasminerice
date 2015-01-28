@@ -9,11 +9,6 @@
 
   jasmineInterface = jasmineRequire.interface(jasmine, env);
 
-  extend = (destination, source) ->
-    for property in source
-      destination[property] = source[property]
-    return destination;
-
   if (typeof(window) == "undefined" && typeof(exports) == "object")
     extend(exports, jasmineInterface);
   else
