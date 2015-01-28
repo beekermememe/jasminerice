@@ -36,9 +36,4 @@
   window.clearTimeout = window.clearTimeout;
   window.clearInterval = window.clearInterval;
 
-  function extend(destination, source) {
-    for (var property in source) destination[property] = source[property];
-    return destination;
-  }
-
 }());
