@@ -13,10 +13,8 @@
   jasmine.rice.autoExecute = true
 
   currentWindowOnload = window.onload
-  env = jasmine.getEnv();
-
   window.onload = ->
-    currentWindowOnload() if currentWindowOnload
-    htmlReporter.initialize();
-    env.execute();
+    currentWindowOnload()  if currentWindowOnload
+    if jasmine.rice.autoExecute
+      execJasmine()
 )()

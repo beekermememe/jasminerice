@@ -101,7 +101,6 @@
    */
   var currentWindowOnload = window.onload;
 
-  /**
   window.onload = function() {
     if (currentWindowOnload) {
       currentWindowOnload();
@@ -109,7 +108,7 @@
     htmlReporter.initialize();
     env.execute();
   };
-  **/
+
   /**
    * Helper function for readability above.
    */
