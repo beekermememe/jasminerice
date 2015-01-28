@@ -30,7 +30,7 @@
   if catchingExceptions == "undefined"
     env.catchExceptions true
   else
-    env.catchExceptions catchExceptions    
+    env.catchExceptions catchingExceptions    
 
 
   htmlReporter = new jasmine.HtmlReporter({
