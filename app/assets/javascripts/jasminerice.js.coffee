@@ -1,7 +1,8 @@
+#=require jquery-2.1.3
 #=require jasmine
 #=require jasmine-html
 #=require boot
-#=require jasmine-jquery-1.5.8
+#=require jasmine-jquery-2.0.5
 
 (->
 
@@ -15,6 +16,4 @@
   currentWindowOnload = window.onload
   window.onload = ->
     currentWindowOnload()  if currentWindowOnload
-    if jasmine.rice.autoExecute
-      execJasmine()
 )()
