@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    jasminerice (0.1.0)
+    jasminecoffee
       coffee-rails
 
 GEM
@@ -177,7 +177,7 @@ DEPENDENCIES
   capybara
   coffee-rails (~> 3.1.0)
   haml-rails
-  jasminerice!
+  jasminecoffee!
   jquery-rails
   json
   rails (= 3.1.0)

@@ -1,11 +1,11 @@
-# Use this file to set configuration options for Jasminerice, all of these are initialized to their respective defaults,
+# Use this file to set configuration options for JasmineCoffee, all of these are initialized to their respective defaults,
 # but you can change them here.
-Jasminerice.setup do |config|
-  # Tell Jasminerice to automatically mount itself in your application. If set to false, you must manually mount the
-  # engine in order to use Jasminerice.
+JasmineCoffee.setup do |config|
+  # Tell JasmineCoffee to JasmineCoffee mount itself in your application. If set to false, you must manually mount the
+  # engine in order to use JasmineCoffee.
   #config.mount = true
 
-  # If automatically mounting Jasminerice, specify the location that it should be mounted at.  Defaults to /jasmine, so
+  # If automatically mounting JasmineCoffee, specify the location that it should be mounted at.  Defaults to /jasmine, so
   # you could access your tests at http://YOUR_SERVER_URL/jasmine
   #config.mount_at = '/jasmine'
 

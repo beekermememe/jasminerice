@@ -1,14 +1,14 @@
 require "spec_helper"
 
-describe Jasminerice::Engine do
+describe JasmineCoffee::Engine do
 
   it "is a class" do
-    Jasminerice::Engine.should be_a(Class)
+    JasmineCoffee::Engine.should be_a(Class)
   end
 
   it "has been isolated with a name" do
-    expect(Jasminerice::Engine.isolated?).to be(true)
-    expect(Jasminerice::Engine.railtie_name).to eql("jasminerice")
+    expect(JasmineCoffee::Engine.isolated?).to be(true)
+    expect(JasmineCoffee::Engine.railtie_name).to eql("jasminecoffee")
   end
 
   it "adds asset paths from configuration" do

@@ -18,7 +18,7 @@ describe JasmineCoffee do
     it "yields self" do
       config = nil
       JasmineCoffee.setup { |c| config = c }
-      expect(config).to be(Jasminerice)
+      expect(config).to be(JasmineCoffee)
     end
 
     it "allows changing configuration" do

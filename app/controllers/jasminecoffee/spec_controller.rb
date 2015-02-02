@@ -1,7 +1,7 @@
 module JasmineCoffee
-  class SpecController < Jasminerice::ApplicationController
+  class SpecController < JasmineCoffee::ApplicationController
     warn "Using JasmineCoffee::HelperMethods is deprecated and will be removed in a future release,"\
-        "please use Jasminerice::SpecHelper to define your helpers in the future" if defined?(JasmineCoffee::HelperMethods)
+        "please use JasmineCoffee::SpecHelper to define your helpers in the future" if defined?(JasmineCoffee::HelperMethods)
 
     helper JasmineCoffee::HelperMethods rescue nil
     helper JasmineCoffee::SpecHelper rescue nil

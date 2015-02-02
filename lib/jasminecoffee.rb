@@ -1,5 +1,5 @@
-module Jasminerice
-  # Determine whether or not to mount the Jasminerice engine implicitly. True/False
+module JasmineCoffee
+  # Determine whether or not to mount the JasmineCoffee engine implicitly. True/False
   mattr_accessor :mount
   @@mount = true
 
@@ -15,24 +15,24 @@ module Jasminerice
   mattr_accessor :fixture_path
   @@fixture_path = 'spec/javascripts/fixtures'
 
-  # Default way to setup Jasminerice. Run rails generate jasminerice:install to create
+  # Default way to setup JasmineCoffee. Run rails generate jasminecoffee:install to create
   # a fresh initializer with all configuration values.
   def self.setup
     yield self
   end
 
   class Engine < Rails::Engine
-    isolate_namespace Jasminerice
+    isolate_namespace JasmineCoffee
 
     initializer :assets, :group => :all do |app|
-      app.config.assets.paths << Rails.root.join(Jasminerice.spec_path, "javascripts").to_s
-      app.config.assets.paths << Rails.root.join(Jasminerice.spec_path, "stylesheets").to_s
+      app.config.assets.paths << Rails.root.join(JasmineCoffee.spec_path, "javascripts").to_s
+      app.config.assets.paths << Rails.root.join(JasmineCoffee.spec_path, "stylesheets").to_s
     end
 
     config.after_initialize do |app|
       app.routes.prepend do
-        mount Jasminerice::Engine => Jasminerice.mount_at
-      end if Jasminerice.mount
+        mount JasmineCoffee::Engine => JasmineCoffee.mount_at
+      end if JasmineCoffee.mount
     end
   end
 end
