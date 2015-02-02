@@ -6,7 +6,7 @@ if ::Rails.version >= '3.1'
         source_root File.expand_path('../templates', __FILE__)
 
         def copy_files
-          copy_file 'jasminecoffee.rb', 'config/initializers/jasminecoffee.rb'
+          copy_file 'jasmine_coffee.rb', 'config/initializers/jasmine_coffee.rb'
           copy_file 'spec.js.coffee', 'spec/javascripts/spec.js.coffee'
           copy_file 'example_spec.js.coffee', 'spec/javascripts/example_spec.js.coffee'
           copy_file 'spec.css', 'spec/javascripts/spec.css'
