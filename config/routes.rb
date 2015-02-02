@@ -1,4 +1,4 @@
-Jasminerice::Engine.routes.draw do
+JasmineCoffee::Engine.routes.draw do
   resources :spec, :controller => 'spec', :only => [:index] do
     get "fixtures/*filename", :action => :fixtures
   end

@@ -1,7 +1,7 @@
 # Use this file to set configuration options for Jasminerice, all of these are initialized to their respective defaults,
 # but you can change them here.
-if defined?(Jasminerice) == 'constant'
-  Jasminerice.setup do |config|
+if defined?(JasmineCoffee) == 'constant'
+  JasmineCoffee.setup do |config|
     # Tell Jasminerice to automatically mount itself in your application. If set to false, you must manually mount the
     # engine in order to use Jasminerice.
     #config.mount = true

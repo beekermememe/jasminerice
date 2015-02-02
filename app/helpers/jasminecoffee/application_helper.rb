@@ -1,4 +1,4 @@
-module Jasminerice
+module JasmineCoffee
   module ApplicationHelper
   end
 end

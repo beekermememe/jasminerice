@@ -10,8 +10,8 @@
   jasmine.getStyleFixtures().fixturesPath = 'jasmine/fixtures'
   jasmine.getJSONFixtures().fixturesPath = 'jasmine/fixtures/json'
 
-  jasmine.rice = {}
-  jasmine.rice.autoExecute = true
+  jasmine.coffee = {}
+  jasmine.coffee.autoExecute = true
 
   currentWindowOnload = window.onload
   window.onload = ->
